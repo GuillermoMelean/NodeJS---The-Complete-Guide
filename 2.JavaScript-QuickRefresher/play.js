@@ -1,11 +1,19 @@
-let name = 'Guillermo'; // <--- string
-let age = 25; // <--- number
-let hasHobbies = true; // <--- boolean
-
-const sumarizeUser = (userName, userAge, userHasHobby) => {
-    return ('Name is ' + userName +
-        ", age is " + userAge +
-        ' and the user has hobbies: ' + userHasHobby)
+const fetchData = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => { 
+            resolve('Done!') 
+        }, 1500)
+    });
+    return promise;
 }
 
-console.log(sumarizeUser(name, age, hasHobbies));
+
+setTimeout(() => {
+    console.log('Timer is done!');
+    fetchData().then(text => {
+        console.log(text);
+    });
+}, 2000);
+
+console.log('Hello!');
+console.log('Hi');
