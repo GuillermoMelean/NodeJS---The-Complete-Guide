@@ -1,6 +1,6 @@
 # 2. JavaScript - a Quick Refresher
 
-## **JavaScript Summary**
+## **Summary**
 - Weakly Typed Language:
     - No explicit type assignment
     - Data types can be switched dinamically
